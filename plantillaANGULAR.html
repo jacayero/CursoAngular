@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charsert="utf-8">
+
+<title>Hola Mundo </title>
+<meta name="description" content="Curso Angular JS">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<script src="./lib/angular.min.js"></script>
+</head>
+<body ng-app ng-init="userName='Pepe'; curso='Angular'">
+<form>
+
+<p>
+    <label for="inputName">Nombre</label>
+<input id="inputName" type="text" ng-model="userName"></input>
+</p>
+
+<p>
+<button ng-click="userName=''">Borrar</button>
+
+</p>
+
+<p>
+
+Bienvenido al curso de {{curso}}
+
+Hola {{userName}}
+
+</p>
+</form>
+
+</body> 
+
+</html>
