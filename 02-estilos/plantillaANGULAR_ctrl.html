@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charsert="utf-8">
+
+<title>Hola Mundo Ctrl </title>
+<meta name="description" content="Curso Angular JS">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<script src="../node_modules/angular/angular.js"></script>
+<script src="./app.js"></script>
+<script src="./appCtrl.js"></script>
+</head>
+<body ng-app="appMain" ng-controller="AppCtrl as vm">
+<form>
+
+<p>
+    <label for="inputName">Nombre</label>
+<input id="inputName" type="text" ng-model="vm.user.name"></input>
+</p>
+
+<p>
+<button ng-click="vm.borrar()">Borrar</button>
+
+</p>
+
+<p>
+
+Bienvenido al curso de {{vm.curso}}
+
+Hola {{vm.user.name}}
+
+</p>
+</form>
+
+</body> 
+
+</html>

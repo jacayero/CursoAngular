@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Hola Mundo Ctrl </title>
+<meta name="description" content="Curso Angular JS">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<script src="../node_modules/angular/angular.js"></script>
+<script src="./app.js"></script>
+<script src="./appCtrl.js"></script>
+</head>
+<body ng-app="appMain" ng-controller="AppCtrl as $ctrl">
+<form>
+
+<p>
+    <label for="inputName">Nombre</label>
+<input id="inputName" type="text" ng-model="$ctrl.name"></input>
+</p>
+
+<p>
+<button ng-click="$ctrl.sumar()">añadir</button>
+
+</p>
+
+<p>
+
+
+
+<p ng-repeat="el in $ctrl.array" >
+    
+{{$index}} {{el}}
+</p> 
+
+
+
+</p>
+</form>
+
+<ng-include src=" './piePagina.html' "></ng-include>    
+
+</body> 
+
+</html>
