@@ -13,3 +13,28 @@ angular.module("appMain")
         $scope.incremento = total - $scope.incremento;
     }
 }])
+
+class acumulador {
+    
+    //    constructor(){
+    //     this.$scope=$scope
+    //   }
+    
+        $onInit(){
+            $scope.total = 0;
+            $scope.incremento = 0;
+        }
+    
+        mas (){
+            $scope.incremento = total + $scope.incremento;
+        }
+    
+        menos (){
+            $scope.incremento = total - $scope.incremento;
+    
+        }
+    }
+    
+    angular.module("appMain").controller("acumulador",acumulador.controller)
+    
+    
