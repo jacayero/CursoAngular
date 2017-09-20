@@ -34,17 +34,19 @@ class AppCtrl {
             generos: ['F','G']
         } 
 
+         new Date 
+
         this.array.push(this.autor3);
         
     }
 
-    sumar (){
-        
     
+   // filtar (){
+        
+   //     this.array.push(this.name);
+                       
 
-        this.array.push(this.name);
-      
-    }
+   // }
 }
 
 

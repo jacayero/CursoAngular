@@ -22,3 +22,4 @@ class AppCtrl {
 
 
 angular.module("appMain").controller("AppCtrl",AppCtrl)
+

@@ -1,1 +1,1 @@
-angular.module("appMain",[]);
+angular.module("acumulador",[]);
